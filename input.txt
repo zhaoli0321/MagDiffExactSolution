@@ -1,0 +1,8 @@
+/// critical internal energy density (10^5*J/cm^3)
+Ec = 0.1
+/// boundary magnetic field (1000*Tesla)
+B0 = 0.2
+/// resistivity below Ec (100*mO.cm)
+EtaS = 9.7e-5
+/// resistivity above Ec (100*mO.cm)
+EtaL = 9.7e-3
