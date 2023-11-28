@@ -1,15 +1,15 @@
-# MagneticDiffusion1D
+# MagDiffExactSolution
 
 ## Introduction
 
-The magnetic diffusion problems is formed by coupling the magnetic diffusion equation and the Ohmic heating energy equation. Ohmic heating causes a severe change in the magnetic diffusion coefficient, making magnetic diffusion a highly nonlinear process. We take 1D as an example and provide a numerical algorithm for this problem under the condition of a step-function resistivity.
+The magnetic diffusion problem is formed by coupling the magnetic diffusion equation and the Ohmic heating energy equation. Ohmic heating causes a severe change in the magnetic diffusion coefficient, making magnetic diffusion a highly nonlinear process. Under the condition of a step-function resistivity and a constant magnetic boundary condition, an exact solution for this nonlinear magnetic diffusion problem can be derived according to reference "http://arxiv.org/abs/2311.14950". This C-program realizes the method in the reference: it outputs a solution of $B(x,t)$ once the four input parameters $B_0$, $E_c$, $\eta_L$, and $\eta_S$ are given.
 
 ## Build
 
 Build *main*:
 
 ```makefile
-~> cd MagneticDiffusion1D
+~> cd MagDiffExactSolution
 ~> make 
 ```
 
@@ -24,13 +24,13 @@ Build *main*:
 The terminal outputs:
 
 ```sh
-The input parameters are：
+The input parameters are:
 Ec = 1.000000E-01   
 B0 = 2.000000E-01   
 EtaS = 9.700000E-05   
 EtaL = 9.700000E-03   
 
-Results：
+Results:
 Bc = 1.557672E-01   
 h = 2.440632E-03   
 
