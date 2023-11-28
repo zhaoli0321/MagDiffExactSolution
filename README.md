@@ -16,7 +16,6 @@ Build *main*:
 ## Running
 
 ```sh
-for example:
 ./main
 ```
 
