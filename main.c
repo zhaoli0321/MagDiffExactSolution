@@ -304,7 +304,7 @@ int main()
 {
 	///////////////////////////////////////// Read the input parameters from file
 	ReadParametersFromInputFile("input.txt");
-	printf("The input parameters are：\n");
+	printf("The input parameters are:\n");
 	printf("Ec = %-15.6E\n", Ec);
 	printf("B0 = %-15.6E\n", B0);
 	printf("EtaS = %-15.6E\n", EtaS);
@@ -312,7 +312,7 @@ int main()
 	///////////////////////////////////////// Calculate Bc, h
 	double bc, h;
 	CalcBcAndh(&bc, &h);
-	printf("Results：\n");
+	printf("Results:\n");
     printf("Bc = %-15.6E\n", bc);
 	printf("h = %-15.6E\n", h);
 	///////////////////////////////////////// Output various intermediate results
